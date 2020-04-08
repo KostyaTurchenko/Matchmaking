@@ -1,0 +1,8 @@
+Flask==1.0.3
+Flask_SQLAlchemy==2.4.0
+Flask_Admin==1.5.4
+Flask_Bcrypt==0.7.1
+Flask_Login==0.4.1
+Flask_Migrate==2.5.2
+Flask_WTF==0.14.2
+WTForms==2.2.1
