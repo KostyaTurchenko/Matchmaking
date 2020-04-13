@@ -1,0 +1,82 @@
+body{
+background-color: #2F4F4F;}
+
+h1 {color:#FFF; font-size:50px; padding:15px; font-weight: 100; text-shadow: 1px 0 1px #000, 
+0 1px 1px #000, 
+-1px 0 1px #000, 
+0 -1px 1px #000;}
+
+p {font-size: 20px; color: #fff; }
+
+a.button2 {
+  position: relative;
+  right: 10px;
+  display: inline-block;
+  width: 10em;
+  height: 2.5em;
+  line-height: 2.5em;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 -1px 1px #777;
+  color: #fff;
+  outline: none;
+  border: 2px solid #006400;
+  border-radius: 5px;
+  box-shadow: 0 0 0 60px rgba(0,0,0,0) inset, .1em .1em .2em #191970;
+  background: linear-gradient(#7CFC00, #00FA9A 48%, #66CDAA 52%, #20B2AA);
+}
+a.button2:active {
+  box-shadow: 0 0 0 60px rgba(0,0,0,.05) inset;
+}
+
+a.button3 {
+  position: relative;
+  right: 10px;
+  display: inline-block;
+  width: 10em;
+  height: 2.5em;
+  line-height: 2.5em;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 -1px 1px #777;
+  color: #fff;
+  outline: none;
+  border: 2px solid #006400;
+  border-radius: 5px;
+  box-shadow: 0 0 0 60px rgba(0,0,0,0) inset, .1em .1em .2em #191970;
+  background: linear-gradient(#7CFC00, #00FA9A 48%, #66CDAA 52%, #20B2AA);
+}
+a.button3:active {
+  box-shadow: 0 0 0 60px rgba(0,0,0,.05) inset;
+}
+
+a.button1 {
+  position: relative;
+  right: 10px;
+  display: inline-block;
+  width: 10em;
+  height: 2.5em;
+  line-height: 2.5em;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 -1px 1px #777;
+  color: #fff;
+  outline: none;
+  border: 2px solid #006400;
+  border-radius: 5px;
+  box-shadow: 0 0 0 60px rgba(0,0,0,0) inset, .1em .1em .2em #191970;
+  background: linear-gradient(#7CFC00, #00FA9A 48%, #66CDAA 52%, #20B2AA);
+}
+a.button1:active {
+  box-shadow: 0 0 0 60px rgba(0,0,0,.05) inset;
+}
+
+h2 {color:#FFF; font-size:30px;  position: absolute;
+  right: 125px;
+  top:75px; padding:15px; font-weight: 100; text-shadow: 1px 0 1px #000, 
+0 1px 1px #000, 
+-1px 0 1px #000, 
+0 -1px 1px #000;}

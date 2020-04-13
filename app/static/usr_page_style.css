@@ -1,0 +1,176 @@
+body{
+background-color: #2F4F4F;}
+
+h1 {position: absolute;
+	top:-50px;color:#FFF; font-size:50px; padding:15px; font-weight: 100; text-shadow: 1px 0 1px #000, 
+0 1px 1px #000, 
+-1px 0 1px #000, 
+0 -1px 1px #000;}
+
+h2 {color:#FFF; font-size:30px;  position: absolute;
+  right: 125px;
+  top:75px; padding:15px; font-weight: 100; text-shadow: 1px 0 1px #000, 
+0 1px 1px #000, 
+-1px 0 1px #000, 
+0 -1px 1px #000;}
+
+h3 {color:#FFF; font-size:30px;  position: absolute;
+  left: 100px;
+  top:70px; padding:15px; font-weight: 100; text-shadow: 1px 0 1px #000, 
+0 1px 1px #000, 
+-1px 0 1px #000, 
+0 -1px 1px #000;}
+
+ .box1{
+	position: absolute;
+	left: 100px;
+	top:150px;
+    width: 400px;
+    margin: 10px auto;
+    padding: 3px 20px;
+    background-color: #A9A9A9;
+}
+.box1 .title,
+.box1 .meaning{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.box1 .title{
+    font-size: 25px;
+    font-weight: bold;
+}
+.box1 .meaning{
+    font-size: 22px;
+}
+
+.box1 .button{
+	margin:10px auto;
+	text-align: center;
+}
+
+a.button25 {
+  position: relative;
+  display: inline-block;
+  width: 10em;
+  height: 2.5em;
+  line-height: 2.5em;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 -1px 1px #777;
+  color: #fff;
+  outline: none;
+  border: 2px solid #000080;
+  border-radius: 5px;
+  box-shadow: 0 0 0 60px rgba(0,0,0,0) inset, .1em .1em .2em #191970;
+  background: linear-gradient(#87CEFA, #4682B4 48%, #008080 52%, #483D8B);
+}
+a.button25:active {
+  top: .1em;
+  left: .1em;
+  box-shadow: 0 0 0 60px rgba(0,0,0,.05) inset;
+}
+
+a.button24 {
+  position: relative;
+  display: inline-block;
+  width: 10em;
+  height: 2.5em;
+  line-height: 2.5em;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 -1px 1px #777;
+  color: #fff;
+  outline: none;
+  border: 2px solid #000080;
+  border-radius: 5px;
+  box-shadow: 0 0 0 60px rgba(0,0,0,0) inset, .1em .1em .2em #191970;
+  background: linear-gradient(#6A5ACD, #483D8B 48%, #4B0082 52%, #800080);
+}
+a.button24:active {
+  top: .1em;
+  left: .1em;
+  box-shadow: 0 0 0 60px rgba(0,0,0,.05) inset;
+}
+
+ .box2{
+	position: absolute;
+	right: 100px;
+	top:150px;
+    width: 400px;
+    margin: 10px auto;
+    padding: 3px 20px;
+    background-color: #A9A9A9;
+}
+.box2 .title,
+.box2 .meaning{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.box2 .title{
+    font-size: 25px;
+    font-weight: bold;
+}
+.box2 .meaning{
+    font-size: 22px;
+}
+
+.box2 .button{
+	margin:10px auto;
+	text-align: center;
+}
+
+a.button1 {
+  position: absolute;
+  right: 50px;
+  top:10px;
+  display: inline-block;
+  width: 10em;
+  height: 2.5em;
+  line-height: 2.5em;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 -1px 1px #777;
+  color: #fff;
+  outline: none;
+  border: 2px solid #006400;
+  border-radius: 5px;
+  box-shadow: 0 0 0 60px rgba(0,0,0,0) inset, .1em .1em .2em #191970;
+  background: linear-gradient(#7CFC00, #00FA9A 48%, #66CDAA 52%, #20B2AA);
+}
+a.button1:active {
+	position: absolute;
+  right: 50px;
+  top:10px;
+  box-shadow: 0 0 0 60px rgba(0,0,0,.05) inset;
+}
+
+a.button2 {
+  position: absolute;
+  right: 300px;
+  top:10px;
+  display: inline-block;
+  width: 10em;
+  height: 2.5em;
+  line-height: 2.5em;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 -1px 1px #777;
+  color: #fff;
+  outline: none;
+  border: 2px solid #800000;
+  border-radius: 5px;
+  box-shadow: 0 0 0 60px rgba(0,0,0,0) inset, .1em .1em .2em #8B0000;
+  background: linear-gradient(#D2691E, #A0522D 48%, #A52A2A 52%, #800000);
+}
+a.button2:active {
+	position: absolute;
+  right: 300px;
+  top:10px;
+  box-shadow: 0 0 0 60px rgba(0,0,0,.05) inset;
+}
