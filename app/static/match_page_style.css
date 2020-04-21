@@ -5,6 +5,14 @@ h1 {color:#FFF; font-size:50px; padding:15px; font-weight: 100; text-shadow: 1px
 0 1px 1px #000, 
 -1px 0 1px #000, 
 0 -1px 1px #000;}
+h2 {color:#FFF; font-size:35px; padding:15px; font-weight: 50; text-shadow: 1px 0 1px #000, 
+0 1px 1px #000, 
+-1px 0 1px #000, 
+0 -1px 1px #000;}
+h3 {color:#FFF; font-size:30px; font-weight: 100; text-shadow: 1px 0 1px #000, 
+0 1px 1px #000, 
+-1px 0 1px #000, 
+0 -1px 1px #000;}
 
 p {font-size: 20px; color: #fff; }
 

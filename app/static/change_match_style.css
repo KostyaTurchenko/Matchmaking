@@ -8,9 +8,11 @@ h1 {color:#FFF; font-size:50px; padding:15px; font-weight: 100; text-shadow: 1px
 
 p {font-size: 20px; color: #fff; }
 
+
 a.button2 {
-  position: relative;
-  right: 10px;
+  position: absolute;
+  right: 550px;
+  top:470px;
   display: inline-block;
   width: 10em;
   height: 2.5em;
@@ -31,8 +33,9 @@ a.button2:active {
 }
 
 a.button3 {
-  position: relative;
-  right: 10px;
+  position: absolute;
+  left: 300px;
+  top:470px;
   display: inline-block;
   width: 10em;
   height: 2.5em;
@@ -52,9 +55,22 @@ a.button3:active {
   box-shadow: 0 0 0 60px rgba(0,0,0,.05) inset;
 }
 
+h2 {color:#FFF; font-size:30px;  position: absolute;
+  right: 15px;
+  top:2px; padding:15px; font-weight: 100; text-shadow: 1px 0 1px #000, 
+0 1px 1px #000, 
+-1px 0 1px #000, 
+0 -1px 1px #000;}
+h3 {color:#FFF; font-size:30px;  position: relative;
+top:-350; left:950;
+padding:15px; font-weight: 100; text-shadow: 1px 0 1px #000, 
+0 1px 1px #000, 
+-1px 0 1px #000, 
+0 -1px 1px #000;}
+
 a.button1 {
   position: relative;
-  right: 10px;
+  top:-340; left:950;
   display: inline-block;
   width: 10em;
   height: 2.5em;
@@ -73,10 +89,3 @@ a.button1 {
 a.button1:active {
   box-shadow: 0 0 0 60px rgba(0,0,0,.05) inset;
 }
-
-h2 {color:#FFF; font-size:30px;  position: absolute;
-  right: 125px;
-  top:75px; padding:15px; font-weight: 100; text-shadow: 1px 0 1px #000, 
-0 1px 1px #000, 
--1px 0 1px #000, 
-0 -1px 1px #000;}
