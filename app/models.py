@@ -49,7 +49,7 @@ class Game(db.Model):
         return str(self.name)
 
 
-class GameGenre(db.Model):
+class Genre(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(60))
     games = db.relationship('Game', backref='genre', lazy=True)
