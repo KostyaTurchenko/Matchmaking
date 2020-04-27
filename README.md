@@ -16,6 +16,7 @@
 - [miro](https://miro.com/app/board/o9J_kum_2c0=/)
 - [Техническое задание](https://github.com/KostyaTurchenko/Matchmaking/blob/master/docs/TZ.docx)
 - [Курсовой проект](https://github.com/KostyaTurchenko/Matchmaking/blob/master/docs/kursovoy_proekt.docx)
+- [Отчет за вторую аттестацию](https://github.com/KostyaTurchenko/Matchmaking/blob/master/docs/onchet_2att.docx)
 
 ---
 
