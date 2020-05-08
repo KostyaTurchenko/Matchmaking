@@ -42,7 +42,7 @@ class UserRoom(db.Model):
 class Game(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(40))
-    game_genre_id = db.Column(db.Integer, db.ForeignKey('game_genre.id'))
+    game_genre_id = db.Column(db.Integer, db.ForeignKey('genre.id'))
     rooms = db.relationship('Room', backref='game', lazy=True)
 
     def __repr__(self):
