@@ -25,12 +25,26 @@ class Accession:
             return True
         return False
 
-    def join_room(self, user, room):
-        pass
+    def join_room(self, user_id, room_id):
+        user = User.query.get(user_id)
+        room = Room.query.get(room_id)
+        if user and room and not user.rooms.count(room) and len(room.participants) < room.max_num_of_player:
+            user.rooms.append(room)
+            self.db.session.commit()
+            return True
+        return False
 
-    def leave_room(self, user, room):
-        pass
+    def leave_room(self, user_id, room_id):
+        user = User.query.get(user_id)
+        room = Room.query.get(room_id)
+        if user and user.rooms.count(room):
+            user.rooms.remove(room)
+            self.db.session.commit()
+            return True
+        return False
 
     def get_user_information(self, user):
         pass
+
+
 

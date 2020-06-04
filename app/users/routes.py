@@ -32,6 +32,7 @@ def register():
     return render_template("registration.html", form=form)
 
 
+@users.route('/', methods=['GET', 'POST'])
 @users.route("/login", methods=['GET', 'POST'])
 def login():
     if current_user.is_authenticated:
