@@ -27,7 +27,8 @@ class Accession:
 
     def join_room(self, user_id, room):
         user = User.query.get(user_id)
-        if user and room and not user.rooms.count(room) and len(room.participants) < room.max_num_of_player:
+        if user and room and not user.rooms.count(room) and not user.user_rooms.count(room)\
+                and len(room.participants) < room.max_num_of_player:
             user.rooms.append(room)
             self.db.session.commit()
             return True
@@ -42,6 +43,7 @@ class Accession:
             self.db.session.commit()
             return True
         return False
+
 
     def get_user_information(self, user):
         rooms = user.rooms

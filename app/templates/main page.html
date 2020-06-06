@@ -11,7 +11,12 @@
 </div>
 <div>
   {% if current_user.is_authenticated %}
-  <a href="{{ url_for('users.logout') }}" class="">Выход</a>
+  <a href="{{ url_for('users.logout') }}" class="button3">Выход</a>
+  {% endif %}
+</div>
+<div>
+  {% if current_user.is_admin %}
+  <a href="/admin" class="button3">Редактор</a>
   {% endif %}
 </div>
 <form action="" method="get">
@@ -19,27 +24,21 @@
   <button type="submit"></button>
 </form>
 <ul class="checkboxes">
-  {% for genre in genres %}
-  <div>
-    <a href="{{ url_for('main.get_rooms_by_genre', genre_id=genre.id) }}" class="">{{ genre.name }}</a>
-  <div/>
-  {% endfor %}
-<!--  <li class="checkbox-group"><input type="checkbox" id="checkbox-1" class="checkbox"><label for="checkbox-1" class="label">один</label></li>-->
-<!--  <li class="checkbox-group"><input type="checkbox" id="checkbox-2" class="checkbox"><label for="checkbox-2" class="label">два</label></li>-->
-<!--  <li class="checkbox-group"><input type="checkbox" id="checkbox-5" class="checkbox"><label for="checkbox-5" class="label">три</label></li>-->
-<!--  <li class="checkbox-group"><input type="checkbox" id="checkbox-3" class="checkbox"><label for="checkbox-3" class="label">четыре</label></li>-->
-</ul>
-<ul class="checkboxes2">
   {% for game in games %}
   <div>
     <a href="{{ url_for('main.get_rooms_by_game', game_id=game.id) }}" class="">{{ game.name }}</a>
   </div>
   {% endfor %}
-<!--  <li class="checkbox-group2"><input type="checkbox" id="checkbox-1" class="checkbox"><label for="checkbox-1" class="label">один</label></li>-->
-<!--  <li class="checkbox-group2"><input type="checkbox" id="checkbox-2" class="checkbox"><label for="checkbox-2" class="label">два</label></li>-->
-<!--  <li class="checkbox-group2"><input type="checkbox" id="checkbox-5" class="checkbox"><label for="checkbox-5" class="label">три</label></li>-->
-<!--  <li class="checkbox-group2"><input type="checkbox" id="checkbox-3" class="checkbox"><label for="checkbox-3" class="label">четыре</label></li>-->
 </ul>
+
+<ul class="checkboxes2">
+  {% for genre in genres %}
+  <div>
+    <a href="{{ url_for('main.get_rooms_by_genre', genre_id=genre.id) }}" class="">{{ genre.name }}</a>
+  </div>
+  {% endfor %}
+</ul>
+
 <h2>Жанры:</h2>
 <h3>Игры:</h3>
 {% for room in rooms %}
@@ -51,7 +50,7 @@
     {{ room.game.name }}
   </div>
     <div class="button">
-  	<a href="#" class="button25">Вступить</a>
+  	<a href="{{ url_for('users.join_room', room_id=room.id) }}" class="button25">Вступить</a>
 	</div>
 </div>
 {% endfor %}

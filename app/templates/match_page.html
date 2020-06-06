@@ -5,18 +5,27 @@
 <link rel="stylesheet" type="text/css" href="../static/match_page_style.css">
 </head>
 <body/>
-<center/><h1>Название комнаты</center>
+<center/><h1>{{ room.name }}</h1></center>
   <p align="center">
-    <label>Время и дата начала<br></label>
+    <label>Дата проведения: {{ room.start_time.date() }}<br></label>
   </p>
   <p align="center">
-    <label>Максимальное количество игроков<br></label>
+    <label>Максимальное количество игроков: {{ room.max_num_of_player }}<br></label>
   </p>
     <p align="center">
-    <label>Сообщение для участников<br></label>
+    <label>Сообщение для участников: {{ room.host_message }}<br></label>
   </p>
 <h2>Список игроков:</h2>
-<h3>Василий</h3>
- <a href="#" class="button3">Назад</a>
+
+{% for p in room.participants %}
+<div>
+  <h3>{{ p.username }}</h3>
+  {% if current_user.id == room.host_id %}
+  <a href="{{ url_for('matches.exclude_user', user_id=p.id, room_id=room.id) }}" class="button3">Исключить</a>
+  {% endif %}
+</div>
+{% endfor %}
+
+<a href="{{ url_for('matches.user_page') }}" class="button3">Назад</a>
 </body>
 </html>

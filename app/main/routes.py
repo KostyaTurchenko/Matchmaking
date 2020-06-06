@@ -19,6 +19,8 @@ def home():
         if s:
             global rooms
             rooms = Room.query.filter(Room.name.contains(s)).all()
+        else:
+            rooms = Room.query.all()
         return render_template("main page.html", rooms=rooms, games=games, genres=genres)
     except Exception as e:
         print(e)
@@ -36,6 +38,11 @@ def get_rooms_by_genre(genre_id):
     try:
         global games, rooms
         games, rooms = navig.get_games_and_rooms_by_genre(genre_id)
+
+        s = request.args.get('s')
+        if s:
+            rooms = Room.query.filter(Room.name.contains(s)).all()
+
         return render_template("main page.html", rooms=rooms, games=games, genres=genres)
     except Exception as e:
         print(e)
@@ -47,6 +54,11 @@ def get_rooms_by_game(game_id):
     try:
         global rooms
         rooms = navig.get_rooms_by_game(game_id)
+
+        s = request.args.get('s')
+        if s:
+            rooms = Room.query.filter(Room.name.contains(s)).all()
+
         return render_template("main page.html", rooms=rooms, games=games, genres=genres)
     except Exception as e:
         print(e)

@@ -6,23 +6,96 @@
 </head>
 <body/>
 <center/><h1>Создание комнаты</h1></center>
+
+<form method="POST" action="">
+  {{ form.hidden_tag() }}
   <p align="center">
     <label>Название комнаты:<br></label>
-    <input name="name" type="text" size="30" maxlength="30" value ="">
+
+    {% if form.name.errors %}
+      {{ form.name() }}
+      <div>
+      {% for error in form.name.errors %}
+        <span>{{ error }}</span>
+      {% endfor %}
+      </div>
+    {% else %}
+      {{ form.name() }}
+    {% endif %}
   </p>
   <p align="center">
-    <label>Время и дата начала:<br></label>
-    <input name="name" type="text" size="30" maxlength="30" value ="">
+    <label>Игра:<br></label>
+
+    {% if form.game_options.errors %}
+      {{ form.game_options() }}
+      <div>
+      {% for error in form.game_options.errors %}
+        <span>{{ error }}</span>
+      {% endfor %}
+      </div>
+    {% else %}
+      {{ form.game_options() }}
+    {% endif %}
   </p>
   <p align="center">
-    <label>Максимальное количество игроков:<br></label>
-    <input name="name" type="text" size="30" maxlength="30" value ="">
+    <label>Количество игроков:<br></label>
+    {% if form.max_num_of_player.errors %}
+      {{ form.max_num_of_player() }}
+      <div>
+      {% for error in form.max_num_of_player.errors %}
+        <span>{{ error }}</span>
+      {% endfor %}
+      </div>
+    {% else %}
+      {{ form.max_num_of_player() }}
+    {% endif %}
   </p>
   <p align="center">
-    <label>Сообщение для участников:<br></label>
-   <textarea name="comment"></textarea>
+    <label>Время проведения:<br></label>
+    {% if form.start_time.errors %}
+      {{ form.start_time }}
+      <div>
+      {% for error in form.start_time.errors %}
+        <span>{{ error }}</span>
+      {% endfor %}
+      </div>
+    {% else %}
+      {{ form.start_time }}
+    {% endif %}
   </p>
- <a href="#" class="button2">Создать</a>
+    <p align="center">
+    <label>Сообщение для участников :<br></label>
+    {% if form.host_message.errors %}
+      {{ form.host_message() }}
+      <div>
+      {% for error in form.host_message.errors %}
+        <span>{{ error }}</span>
+      {% endfor %}
+      </div>
+    {% else %}
+      {{ form.host_message() }}
+    {% endif %}
+  </p>
+ <a href="#" class="button2">{{ form.submit(class="button2") }}</a>
+</form>
+
+<!--  <p align="center">-->
+<!--    <label>Название комнаты:<br></label>-->
+<!--    <input name="name" type="text" size="30" maxlength="30" value ="">-->
+<!--  </p>-->
+<!--  <p align="center">-->
+<!--    <label>Время и дата начала:<br></label>-->
+<!--    <input name="name" type="text" size="30" maxlength="30" value ="">-->
+<!--  </p>-->
+<!--  <p align="center">-->
+<!--    <label>Максимальное количество игроков:<br></label>-->
+<!--    <input name="name" type="text" size="30" maxlength="30" value ="">-->
+<!--  </p>-->
+<!--  <p align="center">-->
+<!--    <label>Сообщение для участников:<br></label>-->
+<!--   <textarea name="comment"></textarea>-->
+<!--  </p>-->
+<!-- <a href="#" class="button2">Создать</a>-->
  <a href="#" class="button3">Назад</a>
 </body>
 </html>

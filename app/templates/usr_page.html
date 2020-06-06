@@ -6,15 +6,16 @@
 </head>
 <body/>
 <a href="{{ url_for('main.home') }}" class="button1">На главную</a>
-<a href="#" class="button2">Создать матч</a>
+<a href="{{ url_for('matches.edit_match', room_id=0) }}" class="button2">Создать матч</a>
 <h1>{{ current_user.username }}</h1>
 
 <h2>Список матчей пользователя:</h2>
 
 <h3>Список созданных матчей:</h3>
 
-{% for user_room in user_rooms %}
+
 <div class="box1">
+  {% for user_room in user_rooms %}
   <div class="title">
     {{ user_room.name }}
   </div>
@@ -22,15 +23,17 @@
     {{ user_room.game.name }}
   </div>
     <div class="button">
-  	<a href="#" class="button25">Подробнее</a>
-	<a href="#" class="button24">Удалить</a>
-	<a href="#" class="button24">Изменить</a>
+  	<a href="{{ url_for('matches.show_room', room_id=user_room.id) }}" class="button25">Подробнее</a>
+	<a href="{{ url_for('matches.delete_room', room_id=user_room.id) }}" class="button24">Удалить</a>
+	<a href="{{ url_for('matches.edit_match', room_id=user_room.id) }}" class="button24">Изменить</a>
 	</div>
+    {% endfor %}
 </div>
-{% endfor %}
 
-{% for room in rooms %}
+
+
 <div class="box2">
+  {% for room in rooms %}
   <div class="title">
     {{ room.name }}
   </div>
@@ -38,10 +41,11 @@
     {{ room.game.name }}
   </div>
     <div class="button">
-  	<a href="#" class="button25">Подробнее</a>
+  	<a href="{{ url_for('matches.show_room', room_id=room.id) }}" class="button25">Подробнее</a>
+    <a href="{{ url_for('users.leave_room',room_id=room.id) }}" class="button24">Выйти</a>
 	</div>
+    {% endfor %}
 </div>
-{% endfor %}
 
 </body>
 </html>

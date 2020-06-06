@@ -18,9 +18,11 @@ login_manager.login_message_category = 'info'
 
 from app.main.routes import main
 from app.users.routes import users
+from app.matches.routes import matches
 
 app.register_blueprint(main)
 app.register_blueprint(users)
+app.register_blueprint(matches)
 
 
 # def create_app(config_class=Config):
