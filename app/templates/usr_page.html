@@ -5,17 +5,21 @@
 <link rel="stylesheet" type="text/css" href="../static/usr_page_style.css">
 </head>
 <body/>
-<a href="#" class="button1">На главную</a>
+<a href="{{ url_for('main.home') }}" class="button1">На главную</a>
 <a href="#" class="button2">Создать матч</a>
-<h1>Кабинет пользователя</h1>
+<h1>{{ current_user.username }}</h1>
+
 <h2>Список матчей пользователя:</h2>
+
 <h3>Список созданных матчей:</h3>
+
+{% for user_room in user_rooms %}
 <div class="box1">
   <div class="title">
-    Название турнира
+    {{ user_room.name }}
   </div>
   <div class="meaning">
-    По какой игре, жанры
+    {{ user_room.game.name }}
   </div>
     <div class="button">
   	<a href="#" class="button25">Подробнее</a>
@@ -23,16 +27,21 @@
 	<a href="#" class="button24">Изменить</a>
 	</div>
 </div>
+{% endfor %}
+
+{% for room in rooms %}
 <div class="box2">
   <div class="title">
-    Название турнира
+    {{ room.name }}
   </div>
   <div class="meaning">
-    По какой игре, жанры
+    {{ room.game.name }}
   </div>
     <div class="button">
   	<a href="#" class="button25">Подробнее</a>
 	</div>
 </div>
+{% endfor %}
+
 </body>
 </html>
