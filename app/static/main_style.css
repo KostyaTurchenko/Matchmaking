@@ -201,6 +201,31 @@ button:before {
 	text-align: center;
 }
 
+a.button2 {
+   position: absolute;
+  left: 50px;
+  top:70px;
+  display: inline-block;
+  width: 10em;
+  height: 2.5em;
+  line-height: 2.5em;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 -1px 1px #777;
+  color: #fff;
+  outline: none;
+  border: 2px solid #006400;
+  border-radius: 5px;
+  box-shadow: 0 0 0 60px rgba(0,0,0,0) inset, .1em .1em .2em #191970;
+  background: linear-gradient(#7CFC00, #00FA9A 48%, #66CDAA 52%, #20B2AA);
+}
+a.button2:active {
+  top: .1em;
+  left: .1em;
+  box-shadow: 0 0 0 60px rgba(0,0,0,.05) inset;
+}
+
 a.button25 {
   position: relative;
   display: inline-block;
@@ -246,6 +271,32 @@ a.button1 {
 a.button1:active {
 	position: absolute;
   right: 50px;
+  top:70px;
+  box-shadow: 0 0 0 60px rgba(0,0,0,.05) inset;
+}
+
+a.button3 {
+  position: absolute;
+  left: 50px;
+  top:70px;
+  display: inline-block;
+  width: 10em;
+  height: 2.5em;
+  line-height: 2.5em;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 -1px 1px #777;
+  color: #fff;
+  outline: none;
+  border: 2px solid #006400;
+  border-radius: 5px;
+  box-shadow: 0 0 0 60px rgba(0,0,0,0) inset, .1em .1em .2em #191970;
+  background: linear-gradient(#7CFC00, #00FA9A 48%, #66CDAA 52%, #20B2AA);
+}
+a.button3:active {
+	position: absolute;
+  left: 50px;
   top:70px;
   box-shadow: 0 0 0 60px rgba(0,0,0,.05) inset;
 }
