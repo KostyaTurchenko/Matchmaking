@@ -48,7 +48,7 @@
     {{ room.game.name }}
   </div>
     <div class="button">
-  	<a href="#" class="button25">Вступить</a>
+  	<a href="{{ url_for('users.join_room', room_id=room.id) }}" class="button25">Вступить</a>
 	</div>
 </div>
 {% endfor %}
