@@ -10,14 +10,19 @@ class Accession:
     def login(self, username, password):
         user = User.query.filter_by(username=username).first()
         if user:
-            if bcrypt.check_password_hash(user.password, password):
+            # if bcrypt.check_password_hash(user.password, password):
+            #     login_user(user)
+            #     return True
+            if bcrypt.checkpw(password.encode('utf-8'), user.password):
                 login_user(user)
                 return True
         return False
 
     def registration(self, username, email, password):
         if not User.query.filter_by(username=username).first() and not User.query.filter_by(email=email).first():
-            hashed_password = bcrypt.generate_password_hash(password).decode('utf-8')
+            #hashed_password = bcrypt.generate_password_hash(password).decode('utf-8')
+            salt = bcrypt.gensalt()
+            hashed_password = bcrypt.hashpw(password.encode('utf-8'), salt)
             user = User(username=username, email=email, password=hashed_password)
 
             self.db.session.add(user)
