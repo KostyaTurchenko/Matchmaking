@@ -275,6 +275,32 @@ a.button1:active {
   box-shadow: 0 0 0 60px rgba(0,0,0,.05) inset;
 }
 
+a.button6 {
+  position: absolute;
+  right: 50px;
+  top:120px;
+  display: inline-block;
+  width: 10em;
+  height: 2.5em;
+  line-height: 2.5em;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 -1px 1px #777;
+  color: #fff;
+  outline: none;
+  border: 2px solid #006400;
+  border-radius: 5px;
+  box-shadow: 0 0 0 60px rgba(0,0,0,0) inset, .1em .1em .2em #191970;
+  background: linear-gradient(#7CFC00, #00FA9A 48%, #66CDAA 52%, #20B2AA);
+}
+a.button6:active {
+	position: absolute;
+  right: 50px;
+  top:120px;
+  box-shadow: 0 0 0 60px rgba(0,0,0,.05) inset;
+}
+
 a.button3 {
   position: absolute;
   left: 50px;
