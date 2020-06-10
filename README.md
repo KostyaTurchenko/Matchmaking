@@ -17,6 +17,8 @@
 - [Техническое задание](https://github.com/KostyaTurchenko/Matchmaking/blob/master/docs/TZ.docx)
 - [Курсовой проект](https://github.com/KostyaTurchenko/Matchmaking/blob/master/docs/kursovoy_proekt.docx)
 - [Отчет за вторую аттестацию](https://github.com/KostyaTurchenko/Matchmaking/blob/master/docs/onchet_2att.docx)
+- [Яндекс метрика](https://metrika.yandex.ru/dashboard?id=64765795)
+- [Демо-видео](https://www.youtube.com/watch?v=AEuyLMzG5go&feature=emb_logo)
 
 ---
 
