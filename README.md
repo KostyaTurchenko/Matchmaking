@@ -19,7 +19,7 @@
 - [Отчет за вторую аттестацию](https://github.com/KostyaTurchenko/Matchmaking/blob/master/docs/onchet_2att.docx)
 - [Яндекс метрика](https://metrika.yandex.ru/dashboard?id=64765795)
 - [Демо-видео](https://www.youtube.com/watch?v=AEuyLMzG5go&feature=emb_logo)
-- [Ссылка на приложение](https://kykyx.pythonanywhere.com/)
+- [Ссылка на приложение](https://kykyx.pythonanywhere.com/) Профиль администратора - Ник: whoisbest Парлоль: csf
 
 ---
 
