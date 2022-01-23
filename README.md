@@ -23,10 +23,3 @@
 
 ---
 
-### Участники команды
-
-Вадим Баженов (testing) vadim4998@gmail.com
-
-Виктория Назаренко (front-end) rosalindas1111@gmail.com 
-
-Константин Турченко (back-end) t.costya@yandex.ru
